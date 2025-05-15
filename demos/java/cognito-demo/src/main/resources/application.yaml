@@ -1,7 +1,6 @@
 spring:
-  application:
-    name: cognito-demo
-spring:
+    application:
+        name: cognito-demo
     security:
         oauth2:
             client:
