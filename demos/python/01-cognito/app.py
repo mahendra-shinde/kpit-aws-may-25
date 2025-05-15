@@ -8,13 +8,12 @@ oauth = OAuth(app)
 
 oauth.register(
   name='oidc',
-  authority='https://cognito-idp.us-east-1.amazonaws.com/us-east-1_NhQjqD0Tw',
-  client_id='6rlovbud7a46l4h9anil6dkm9u',
-  client_secret='18c69q92spe30ci8pq4gmqi4hs0cdhhiipujip67t2psomd9cher',
-  server_metadata_url='https://cognito-idp.us-east-1.amazonaws.com/us-east-1_NhQjqD0Tw/.well-known/openid-configuration',
+  authority='https://cognito-idp.us-east-1.amazonaws.com/us-east-1_Mcw5V2gij',
+  client_id='4b044m2if63nsn2o0o157u2pv4',
+  client_secret='<client secret>',
+  server_metadata_url='https://cognito-idp.us-east-1.amazonaws.com/us-east-1_Mcw5V2gij/.well-known/openid-configuration',
   client_kwargs={'scope': 'email openid phone'}
 )
-
 @app.route('/')
 def index():
     user = session.get('user')
@@ -33,7 +32,7 @@ def login():
 @app.route('/authorize')
 def authorize():
     token = oauth.oidc.authorize_access_token()
-    user = token['userinfo']
+    user = token['username']
     session['user'] = user
     return redirect(url_for('index'))
 
