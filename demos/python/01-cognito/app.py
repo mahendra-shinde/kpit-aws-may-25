@@ -10,7 +10,7 @@ oauth.register(
   name='oidc',
   authority='https://cognito-idp.us-east-1.amazonaws.com/us-east-1_NhQjqD0Tw',
   client_id='6rlovbud7a46l4h9anil6dkm9u',
-  client_secret='<client secret>',
+  client_secret='18c69q92spe30ci8pq4gmqi4hs0cdhhiipujip67t2psomd9cher',
   server_metadata_url='https://cognito-idp.us-east-1.amazonaws.com/us-east-1_NhQjqD0Tw/.well-known/openid-configuration',
   client_kwargs={'scope': 'email openid phone'}
 )
