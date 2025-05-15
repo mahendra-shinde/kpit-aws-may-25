@@ -16,22 +16,4 @@ Groups are collections of IAM users. Permissions can be assigned to a group, and
 ## Permissions
 Permissions define what actions a user or group can perform on specific AWS resources. Permissions are granted using IAM policies, which are JSON documents that specify allowed or denied actions.
 
-### Example: IAM Policy (JSON)
-Below is an example of an IAM policy that grants read-only access to an S3 bucket:
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::example-bucket/*"
-    }
-  ]
-}
-```
-
-This policy allows the user or group to perform the `s3:GetObject` action on all objects within the `example-bucket`.
-
 
