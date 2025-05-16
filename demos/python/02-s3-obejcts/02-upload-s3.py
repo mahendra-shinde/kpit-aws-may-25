@@ -20,3 +20,8 @@ def upload_file_to_s3(bucket_name, file_path, object_name=None):
 
 upload_file_to_s3('buck37tr76tr','D:/git/kpit-aws-may-25/demos/python/02-s3-obejcts/sample.md','sample.md')
 print('File uploaded successfully')
+
+
+
+
+
