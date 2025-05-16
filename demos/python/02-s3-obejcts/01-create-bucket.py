@@ -8,6 +8,8 @@ def create_bucket(bucket_name, region):
     :param region: AWS region where the bucket will be created
     """
     # Create an S3 client
+    # pass AWS Credentials to boto3 client
+    # boto3.setup_default_session(aws_access_key, aws_secret_access_key, region_name=region)
     s3_client = boto3.client('s3', region)
 
     # Create the bucket
