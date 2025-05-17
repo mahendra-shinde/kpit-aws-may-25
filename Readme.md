@@ -1,7 +1,3 @@
-Certainly! Here's a **summary of AWS Fundamentals** that covers all the topics referenced in your MCQs. This summary is ideal for learners preparing for AWS basics or cloud certification courses like AWS Cloud Practitioner or AWS Certified Solutions Architect – Associate.
-
----
-
 ## **AWS Fundamentals Summary**
 
 ### 1. **Cloud Computing Basics**
