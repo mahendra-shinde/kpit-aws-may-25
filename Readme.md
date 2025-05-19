@@ -1,3 +1,7 @@
+Certainly! Here's a **summary of AWS Fundamentals** that covers all the topics referenced in your MCQs. This summary is ideal for learners preparing for AWS basics or cloud certification courses like AWS Cloud Practitioner or AWS Certified Solutions Architect – Associate.
+
+---
+
 ## **AWS Fundamentals Summary**
 
 ### 1. **Cloud Computing Basics**
@@ -95,18 +99,7 @@ S3 is an object storage service used to store and retrieve any amount of data.
 
 ### 9. **Amazon ECR (Elastic Container Registry)**
 
-#### **Introduction to Container Registries**
 
-A container registry is a repository for storing, managing, and sharing container images. It enables teams to version, distribute, and deploy containerized applications efficiently. Registries can be public or private and are essential for DevOps workflows and cloud-native deployments.
-
-**Docker Hub** is the most popular public container registry, allowing users to share and access container images globally. It provides:
-- Public and private repositories
-- Automated builds and webhooks
-- Integration with Docker CLI and other tools
-
-#### ** Amazon ECR **
-
-Organizations often use private registries like Amazon ECR for enhanced security, access control, and integration with cloud services.
 
 ECR is a fully managed Docker container registry that makes it easy to store, manage, and deploy container images.
 
