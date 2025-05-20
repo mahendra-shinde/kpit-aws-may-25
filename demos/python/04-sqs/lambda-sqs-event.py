@@ -2,15 +2,9 @@ import json
 import boto3
 
 def lambda_handler(event, context):
-    # Get the Message from the event
     message = event['Records'][0]['body']
-    messageId = event['Records'][0]['messageId']
-    # Handler is for deleting the message from the queue
-    receiptHandle = event['Records'][0]['receiptHandle']
-    start_date = event['Records'][0]['messageAttributes']['StartDate']['stringValue']
-    end_date = event['Records'][0]['messageAttributes']['EndDate']['stringValue']
-    print("StartDate: " + start_date)
-    print("EndDate: " + end_date)
-    print("MessageId: " + messageId)
-    print("ReceiptHandle: " + receiptHandle)
-    print("Message: " + message)
+    student = event['Records'][0]['messageAttributes']['student']['stringValue']
+    course = event['Records'][0]['messageAttributes']['course']['stringValue']
+    cert_message = f"Mr/Ms {student} has successfuly completed {course} course."
+    s3client = boto3.client('s3')
+    s3client.put_object(Body=cert_message, Bucket='certs34682746', Key=f'{student}-{course}.txt')
