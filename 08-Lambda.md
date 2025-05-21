@@ -2,10 +2,32 @@
 
 AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. You simply upload your code as a function, and Lambda takes care of everything required to run and scale your code.
 
-## Key Concepts
-- **Event-driven**: Lambda functions are triggered by events (e.g., S3 uploads, API Gateway requests, SQS messages).
-- **Stateless**: Each invocation is independent.
-- **Pay-per-use**: You are charged only for the compute time you consume.
+1. Execution Timeout Limit
+    - Default time for execution is 3 seconds, minimum is 1 second.
+    - Maximum execution time is 15 minutes (900 seconds) only.
+
+2. Language Support
+
+    AWS Lambda supports Java, Python, Node.js, and more.
+    C / C++ is not natively supported.
+
+3. Pricing Model
+
+    Pay-as-you-go pricing based on:
+
+    - Number of requests
+    - Execution duration (rounded up to the nearest millisecond)
+
+4. Event Sources / Triggers
+
+    Lambda can be triggered by several AWS services.
+
+    Examples include:
+
+    - Amazon S3
+    - API Gateway
+    - CloudWatch Events
+    - DynamoDB Streams, etc.
 
 ---
 
