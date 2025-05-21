@@ -21,3 +21,22 @@ except ClientError as e:
     print(f"An error occurred: {e.response['Error']['Message']}")
 except Exception as e:
     print(f"Unexpected error: {e}")
+
+# add new record in table
+try:
+    table.put_item(
+        Item={
+            'contactId': 103,
+            'firstname': 'Rajiv',
+            'lastname': 'Bhatia',
+            'email': 'akki@xyz.com',
+            'phone': {
+                "home": "1234567890",
+                "office": "0987654321"
+            }
+        })
+except ClientError as e:
+    print(f"An error occurred: {e.response['Error']['Message']}")
+except Exception as e:
+    print(f"Unexpected error: {e}")
+
