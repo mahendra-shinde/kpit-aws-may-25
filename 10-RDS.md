@@ -5,6 +5,40 @@ Amazon Relational Database Service (RDS) is a managed service that makes it easy
 
 ---
 
+## Features
+ Supported Database Engines
+
+    Amazon RDS supports several relational database engines, including:
+
+    - MySQL
+    - PostgreSQL
+    - Oracle
+    - SQL Server
+    - MariaDB
+
+2. Read Replicas
+
+    Read Replicas are used to offload read traffic and improve scalability.
+
+    Supported for MySQL, PostgreSQL, MariaDB, and Oracle (with limitations).
+
+3. High Availability (HA)
+
+    Multi-AZ Deployment provides automated failover and improved availability.
+
+    Synchronous replication keeps standby DB in sync.
+
+4. Automated Backups
+
+    Automated backups in Amazon RDS are enabled by default and allow you to recover your database to any point in time within the backup retention period. RDS automatically takes daily snapshots of your database and backs up your transaction logs. Backups are stored in Amazon S3 and do not impact database performance. You can restore your database to a new instance at any time using these backups. Backup windows and retention periods are configurable to suit your needs.
+
+    By default, automated backups are retained for 7 days (configurable up to 35 days).
+
+5. Version Upgrades with Minimal Downtime
+
+    Blue/Green Deployments allow safe testing of changes (e.g., version upgrades) with fast switch-over and minimal downtime.
+
+
 ## 1. Creating an RDS Instance
 
 ### Steps:
