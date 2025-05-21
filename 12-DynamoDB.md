@@ -149,5 +149,5 @@ table.delete_item(Key={'UserId': '123'})
 ## References
 - [AWS DynamoDB Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)
 - [Boto3 DynamoDB Docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html)
-
+- [Examples](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-python.html)
 ---
