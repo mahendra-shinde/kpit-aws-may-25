@@ -1,5 +1,6 @@
 import boto3
 from botocore.exceptions import ClientError
+from boto3.dynamodb.conditions import Key
 
 # Initialize a DynamoDB resource using default AWS credentials and region
 try:
@@ -9,7 +10,7 @@ try:
     # Scan the table to get all items
     #response = table.scan()
     response = table.query(
-        KeyConditionExpression=Key('contactId').eq('101')
+        KeyConditionExpression=Key('contactId').eq(102)
     )
     items = response.get('Items', [])
     
