@@ -7,7 +7,10 @@ try:
     table = dynamodb.Table('contacts')
     
     # Scan the table to get all items
-    response = table.scan()
+    #response = table.scan()
+    response = table.query(
+        KeyConditionExpression=Key('contactId').eq('101')
+    )
     items = response.get('Items', [])
     
     print(f"Found {len(items)} items in 'contacts' table:")
